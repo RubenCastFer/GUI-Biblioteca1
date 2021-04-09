@@ -25,7 +25,6 @@ public class Main extends Application {
 }*/
 import java.io.IOException;
 import javafx.application.Application;
-import static javafx.application.Application.launch;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
@@ -38,7 +37,7 @@ public class Main extends Application {
  
         try {
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(Main.class.getResource("viewsandcontrollers/main/Main.fxml"));
+            loader.setLocation(Main.class.getResource("viewandcontrollers/tableview/tableview.fxml"));
             // Cargo la ventana
             Pane ventana = (Pane) loader.load();
  
@@ -58,5 +57,3 @@ public class Main extends Application {
     }
  
 }
-
-
